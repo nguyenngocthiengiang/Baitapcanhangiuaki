@@ -1,0 +1,363 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 500px;
+}
+
+.aquarium{
+    width: 600px;
+    height: 400px;
+    margin: 60px 50px 40px;
+    border-left: 10px solid #008a91;
+    border-right: 10px solid #008a91;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: url(Background.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.border {
+    position: absolute;
+    left: -15px;
+    width: 610px;
+    height: 40px;
+    background: rgb(0, 128, 0);
+    z-index: 20;
+    overflow: hidden;
+}
+
+.border-top{
+    top: 0;
+}
+
+.border-top::before{
+    content: '';
+    position: absolute;
+    background: aquamarine;
+    top: 0;
+    left: -80px;
+    height: 40px;
+    width: 80px;
+    transform: rotate(-60deg);
+    filter: brightness(.7);
+    animation: mirror 8s linear infinite;
+    
+}
+
+@keyframes mirror {
+    0% {
+        left: -80px;
+    } 100%{
+        left: 690px;
+    }
+}
+.border-bottom{
+    top: calc(100% - 20px);
+}
+
+.border-bottom::before {
+    content: '';
+    position: absolute;
+    background: #d6cccc47;
+    top: 0;
+    left: -80px;
+    height: 40px;
+    width: 80px;
+    transform: rotate(-60deg);
+    filter: brightness(.7);
+    animation: mirror 8s linear infinite;
+    animation-delay: 2s;
+}
+
+.fish{
+    position: absolute;
+    z-index: 10;
+}
+.fish-1 {
+    background: url(conca1.png);
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    top: 70%;
+    left: 0;
+    transform: rotateY(180deg);
+    animation: fish 30s linear infinite;
+}
+
+.fish-2{
+    background: url(conca2.png) center no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 80px;
+    top: 50%;
+    left: 0;
+    transform: rotateY(180deg);
+    animation: fish1 50s linear infinite;
+}
+.fish-3{
+    background: url(conca3.png) center no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 60px;
+    top: 70%;
+    left: 0;
+    transform: rotateY(180deg);
+    animation: fish2 30s linear infinite;
+}
+.fish-4{
+    background: url(conca2.png) center no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 90px;
+    bottom: 10%;
+    left: 10%;
+    transform: rotateY(180deg);
+    animation: fish1 30s linear infinite;
+}
+.fish-5{
+    background: url(conca2.png) center no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 40px;
+    top: 50%;
+    left: 20%;
+    transform: rotateY(180deg);
+    animation: fish 20s linear infinite;
+}
+
+.fish-6 {
+    background: url(rua-nuoc-ngot-3__1_-removebg-preview.png) center no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0%; 
+    left: 0;
+    animation: turtle 200s linear infinite;
+}
+
+
+@keyframes fish {
+    0% {
+        left: 0;
+        top: 70%;
+        transform: rotateY(180deg);
+    } 50% {
+        left: calc(100% - 80px);
+        top: 40%;
+        transform: rotateY(180deg);
+    }50.01% {
+        transform: rotateY(0deg);
+        top: 40%;
+    }100% {
+        left: 0%;
+        top: 70%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish1 {
+    0% {
+        left: 0;
+        top: 20%;
+        transform: rotateY(180deg);
+    } 50% {
+        left: calc(100% - 100px);
+        top: 30%;
+        transform: rotateY(180deg);
+    }50.01% {
+        transform: rotateY(0deg);
+        top: 30%;
+    }100% {
+        left: 0%;
+        top: 20%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish3 {
+    0% {
+        left: 70%;
+        top: 40%;
+        transform: rotateY(180deg);
+    } 50% {
+        left: calc(100% - 100px);
+        top: 50%;
+        transform: rotateY(180deg);
+    }50.01% {
+        transform: rotateY(0deg);
+        top: 50%;
+    }100% {
+        left: 20%;
+        top: 40%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish2 {
+    0% {
+        left: 80%;
+        top: 80%;
+        transform: rotateY(180deg);
+    } 50% {
+        left: calc(10% - 100px);
+        top: 70%;
+        transform: rotateY(180deg);
+    }50.01% {
+        transform: rotateY(0deg);
+        top: 70%;
+    }100% {
+        left: 80%;
+        top: 80%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes fish4 {
+    0% {
+        left: 0;
+        top: 70%;
+        transform: rotateY(180deg);
+    } 50% {
+        left: calc(100% - 80px);
+        top: 40%;
+        transform: rotateY(180deg);
+    }50.01% {
+        transform: rotateY(0deg);
+        top: 40%;
+    }100% {
+        left: 10%;
+        top: 70%;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes turtle {
+    0% {
+        left: 0;
+        transform: rotateY(180deg); /* Hướng từ trái sang phải */
+    }
+    49.9% {
+        transform: rotateY(180deg); /* Giữ nguyên hướng khi di chuyển qua bên phải */
+        left: calc(100% - 100px);
+    }
+    50% {
+        left: calc(100% - 100px);
+        transform: rotateY(0deg); /* Quay đầu khi chạm vào cạnh phải */
+    }
+    100% {
+        left: 0;
+        transform: rotateY(0deg); /* Quay lại hướng ban đầu khi bơi về trái */
+    }
+}
+.water {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 11;
+    bottom: 0;  
+    background: url(bongnuoc2.gif) bottom no-repeat;
+    animation: bongnuoc 10s linear infinite;
+    width: 80px;
+    height: 136px;
+}
+
+.water::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 136px;
+    top: 100%;
+    left: 10%;
+    transform: scale(.8);
+    
+}
+
+
+@keyframes bongnuoc {
+    0% {
+        bottom: 0%;
+    }
+    100%{
+        bottom: 65%;
+    }
+}
+
+.water2 {
+    position: absolute;
+    right: 0;
+    left: 510px;
+    z-index: 11;
+    bottom: 0;  
+    background: url(bongnuoc2.gif) bottom no-repeat;
+    animation: bongnuoc 10s linear infinite;
+    width: 80px;
+    height: 136px;
+}
+
+.water2::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 136px;
+    top: 100%;
+    left: 10%;
+    transform: scale(.8);
+}
+
+@keyframes bongnuoc {
+    0% {
+        bottom: 0%;
+    }
+    100%{
+        bottom: 65%;
+    }
+}
+
+.water3 {
+    position: absolute;
+    right: 0;
+    left: 300px;
+    z-index: 11;
+    bottom: 0;  
+    background: url(bongnuoc2.gif) bottom no-repeat;
+    animation: bongnuoc 10s linear infinite;
+    width: 80px;
+    height: 136px;
+}
+
+.water3::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 136px;
+    top: 100%;
+    left: 10%;
+    transform: scale(.8);
+}
+
+@keyframes bongnuoc {
+    0% {
+        bottom: 0%;
+    }
+    100%{
+        bottom: 65%;
+    }
+}

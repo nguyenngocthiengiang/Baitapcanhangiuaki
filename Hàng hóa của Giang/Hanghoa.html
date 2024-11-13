@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thế giới di động</title>
+    <styte>
+    
+    <style>
+        body {
+            h1 {
+            text-align: center;
+            color: #c90808; 
+            margin-top: 20px;
+            font-size: 36px;
+        }
+            background-color: #dff8dc; 
+            font-family: Arial, sans-serif;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; 
+            justify-content: center; 
+            padding: 20px;
+        }
+
+        .hh-box {
+            position: relative; 
+            width: 200px; 
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .hh-box-img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .icon-gia-soc {
+            position: absolute;
+            top: 5px; 
+            right: 5px; 
+            width: 60px; 
+            height: auto;
+            z-index: 10; 
+        }
+
+        .product-card {
+            margin-top: 10px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .current-price {
+            color: red;
+            font-weight: bold;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        .availability {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        /* Style cho khung vàng */
+        .availability .remaining {
+            background-color: yellow;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>THẾ GIỚI DI ĐỘNG</h1>
+    <div class="product-container">
+        <div class="hh-box">
+            <img src="images/images/GiaSoc_62x69px.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/iphone-x-256gb-gray.jpg" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Iphone-X-256GB-gray</p>
+                <p class="current-price">10.000.000đ</p>
+                <p class="original-price">15.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 2/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/new-icon.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/Laptop.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">HP Pavilion 15 eg3094TU i5 1335U</p>
+                <p class="current-price">15.890.000đ</p>
+                <p class="original-price">19.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 10/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/saleoff.png" class="icon-gia-soc"/>
+            <img src="images/Đồng hồ thông minh.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Samsung Galaxy Fit3 dây silicon</p>
+                <p class="current-price">1.240.000đ</p>
+                <p class="original-price">1.390.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 8/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/hot-icon.png" class="icon-gia-soc"/>
+            <img src="images/images/Camera.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Camera IP 360 Độ 2MP Xiaomi Mi Home C200</p>
+                <p class="current-price">440.000đ</p>
+                <p class="original-price">550.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 5/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/moi-icon.png" class="icon-gia-soc"/>
+            <img src="images/images/Chuột.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Chuột không dây Dadez M325 Tuxedo</p>
+                <p class="current-price">110.000đ</p>
+                <p class="original-price">200.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 7/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/hot-icon.png" class="icon-gia-soc"/>
+            <img src="images/images/Đồng hồ thường.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">G-Shock 5600 42.8mm Nam DW-5600FF-8DR</p>
+                <p class="current-price">1.611.000đ</p>
+                <p class="original-price">3.632.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 9/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/kmai-icon.gif" class="icon-gia-soc"/>
+            <img src="images/HangHoa/Laptopacer.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Acer Aspire 3 A315 58 529V i5 1135G7</p>
+                <p class="current-price">8.990.000đ</p>
+                <p class="original-price">10.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 10/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/GiaSoc_62x69px.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/oppo.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Oppo Reno11 Pro 5GB 12GB/512GB</p>
+                <p class="current-price">11.990.000đ</p>
+                <p class="original-price">16.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 3/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/hot-icon.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/iphone 16 thường.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Iphone 16 128 GB</p>
+                <p class="current-price">22.290.000đ</p>
+                <p class="original-price">22.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 8/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/new-icon.png" class="icon-gia-soc"/>
+            <img src="images/iphone 16.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Iphone 16 Promax 256GB</p>
+                <p class="current-price">34.890.000đ</p>
+                <p class="original-price">34.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 9/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/moi-icon.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/Iphone 16 plus.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Iphone 16 Plus 128GB</p>
+                <p class="current-price">25.990.000đ</p>
+                <p class="original-price">.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 9/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/GiaSoc_62x69px.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/Iphone 15 promax.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Iphone 15 promax 256GB</p>
+                <p class="current-price">28.490.000đ</p>
+                <p class="original-price">31.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 6/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/hot-icon.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/Iphone 15 plus.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Iphone 15 Plus 128GB</p>
+                <p class="current-price">22.790.000đ</p>
+                <p class="original-price">25.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 5/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/kmai-icon.gif" class="icon-gia-soc"/>
+            <img src="images/HangHoa/image.png" alt="IP" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">Iphone 15 Plus 128GB</p>
+                <p class="current-price">22.790.000đ</p>
+                <p class="original-price">25.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 4/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/saleoff.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/Iphone 14 plus.png" alt="IP" class="hh-box-img"/>
+            <div class="product-card">
+                <p class="product-name">Iphone 14 Plus 128GB</p>
+                <p class="current-price">20.090.000đ</p>
+                <p class="original-price">22.090.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 8/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/new.gif" class="icon-gia-soc"/>
+            <img src="images/HangHoa/iphone 14.png" alt="IP" class="hh-box-img"/>
+            <div class="product-card">
+                <p class="product-name">Iphone 14  128GB</p>
+                <p class="current-price">17.390.000đ</p>
+                <p class="original-price">19.990.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 10/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/GiaSoc_62x69px.png" class="icon-gia-soc"/>
+            <img src="images/HangHoa/iphone 12.png" alt="IP" class="hh-box-img"/>
+            <div class="product-card">
+                <p class="product-name">Iphone 12 128GB</p>
+                <p class="current-price">11.590.000đ</p>
+                <p class="original-price">13.090.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 1/10 suất</span>
+            </div>
+        </div>
+        <div class="hh-box">
+            <img src="images/images/kmai-icon.gif" class="icon-gia-soc"/>
+            <img src="images/images/Sạc dự phòng.png" class="hh-box-img"/>
+            
+            <div class="product-card">
+                <p class="product-name">AVA+ 10.5W G-DX258 </p>
+                <p class="current-price">550.000đ</p>
+                <p class="original-price">690.000đ</p>
+            </div>
+            <div class="availability">
+                <span class="remaining">Còn 6/10 suất</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
